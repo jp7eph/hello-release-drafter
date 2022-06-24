@@ -29,3 +29,20 @@ template: |
   ## Changes
 
   $CHANGES
+
+autolabeler:
+  - label: bug
+    branch:
+      - '/^fix[/-].+/'
+  - label: chore
+    branch:
+      - '/^chore[/-].+/'
+  - label: documentation
+    branch:
+      - '/doc(umentation)[/-].+/'
+    files:
+      - '*.md'
+  - label: enhancement
+    branch:
+      - '/(enhancement|improve)[/-].+/'
+      - '/^feat(ure)?[/-].+/'
